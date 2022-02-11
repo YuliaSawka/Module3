@@ -1,0 +1,137 @@
+/* Global */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  background: white;
+  color: #3d3d3d;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+section {
+  padding: 180px 0;
+}
+
+/* Splash */
+.splash {
+  height: 100vh;
+  position: relative;
+  background-image: url "https://i.postimg.cc/MTtnTkPb/kodilla.jpg";
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.splash-inner {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.splash i {
+  font-size: 30px;
+  background: #ff5e57;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.page-title {
+  color: #fff;
+  font-size: 60px;
+  margin: 40px 0 0 0;
+  position: relative;
+}
+
+.page--subtitle {
+  margin: 48px 0 0 0;
+  font-size: 18px;
+  color: #fff;
+}
+
+/* Intro */
+.intro {
+  background: #fff;
+}
+
+.intro p {
+  width: 70%;
+  margin: 0 auto;
+  padding: 48px 0;
+  font-size: 24px;
+  border-top: 1px solid #3d3d3d;
+  border-bottom: 1px solid #3d3d3d;
+}
+
+.section-title {
+  position: relative;
+  font-size: 36px;
+  margin: 0 0 60px 0;
+}
+
+.section-title:after {
+  position: absolute;
+  content: " ";
+  bottom: -12px;
+  left: 50%;
+  width: 50px;
+  height: 10px;
+  transform: translateX(-50%);
+  background: #ff5e57;
+}
+
+/* About */
+.about {
+  background: #f0f0f0;
+}
+
+/* Skills */
+.skills ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.skill-image {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.skill-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.skill.right .skill-image {
+  right: 0;
+}
+
+.skill.right .skil-description {
+  padding: 36px 55% 36px 0;
+  text-align: left;
+}
+
+.skill.left .skill-description {
+  padding: 36px 0 36px 55%;
+  text-align: left;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxXQUFBO0FBRUE7RUFDQyxzQkFBQTtBQ0FEOztBREdBO0VBQ0ksaUJBQUE7RUFDQSxjQUFBO0VBQ0EsZUFBQTtBQ0FKOztBREdBO0VBQ0ksU0FBQTtFQUNBLGtCQUFBO0VBQ0EsaUJBQUE7RUFDQSxjQUFBO0VBQ0EsZUFBQTtFQUNBLGdCQUFBO0FDQUo7O0FER0E7RUFDSSxnQkFBQTtBQ0FKOztBREtBLFdBQUE7QUFFQTtFQUNJLGFBQUE7RUFDQSxrQkFBQTtFQUNBLGlFQUFBO0VBQ0Esa0NBQUE7RUFDQSxzQkFBQTtFQUNBLDRCQUFBO0FDSEo7O0FETUE7RUFDSSxrQkFBQTtFQUNBLFdBQUE7RUFDQSxRQUFBO0VBQ0EsU0FBQTtFQUNBLGdDQUFBO0FDSEo7O0FETUE7RUFDSSxlQUFBO0VBQ0EsbUJBdkJTO0VBd0JULFdBQUE7RUFDQSxZQUFBO0VBQ0EsaUJBQUE7RUFDQSxXQUFBO0VBQ0Esa0JBQUE7QUNISjs7QURPQTtFQUNJLFdBQUE7RUFDQSxlQUFBO0VBQ0Esa0JBQUE7RUFDQSxrQkFBQTtBQ0pKOztBRE9BO0VBQ0ksa0JBQUE7RUFDQSxlQUFBO0VBQ0EsV0FBQTtBQ0pKOztBRE9BLFVBQUE7QUFFQTtFQUNJLGdCQUFBO0FDTEo7O0FEUUE7RUFDSSxVQUFBO0VBQ0EsY0FBQTtFQUNBLGVBQUE7RUFDQSxlQUFBO0VBQ0EsNkJBQUE7RUFDQSxnQ0FBQTtBQ0xKOztBRFFBO0VBQ0ksa0JBQUE7RUFDQSxlQUFBO0VBQ0Esa0JBQUE7QUNMSjs7QURRQTtFQUNJLGtCQUFBO0VBQ0EsWUFBQTtFQUNBLGFBQUE7RUFDQSxTQUFBO0VBQ0EsV0FBQTtFQUNBLFlBQUE7RUFDQSwyQkFBQTtFQUNBLG1CQTFFUztBQ3FFYjs7QURRQSxVQUFBO0FBRUE7RUFDSSxtQkFBQTtBQ05KOztBRFNBLFdBQUE7QUFFQTtFQUNJLHFCQUFBO0VBQ0EsU0FBQTtFQUNBLFVBQUE7QUNQSjs7QURVQTtFQUNJLGtCQUFBO0VBQ0EsVUFBQTtFQUNBLFlBQUE7RUFDQSxnQkFBQTtBQ1BKOztBRFVBO0VBQ0ksV0FBQTtFQUNBLFlBQUE7RUFDQSxvQkFBQTtLQUFBLGlCQUFBO0FDUEo7O0FEVUE7RUFDSSxRQUFBO0FDUEo7O0FEVUE7RUFDSSx3QkFBQTtFQUNBLGdCQUFBO0FDUEo7O0FEVUE7RUFDSSx3QkFBQTtFQUNBLGdCQUFBO0FDUEoiLCJmaWxlIjoic3R5bGUuY3NzIn0= */
