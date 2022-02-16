@@ -1,7 +1,7 @@
 /* Global */
 
 *, *::before, *::after {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .container {
@@ -114,14 +114,30 @@ $color-main: #ff5e57;
     padding: 0;
 }
 
-.skill-image {
-    position: absolute;
-    width: 50%;
+.inline-block-element{
+    float: left;
+    width: 100%;
     height: 100%;
     overflow: hidden;
 }
 
-.skill-image img {
+.inline-block-element {
+    display: row;
+    width: 100%;
+    min-height: 60px;
+  }
+
+  .inline-block-element{
+    display: row;
+    width: 100%;
+    min-height: 60px;
+  }
+
+  .inline-block-element {
+    display: inline-block;
+  }
+
+  .skill-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -131,12 +147,14 @@ $color-main: #ff5e57;
     right: 0;
 }
 
-.skill.right .skil-description {
+.skil-description {
+    display: block;
     padding: 36px 55% 36px 0;
-    text-align: left;
+    text-align: bottom;
 }
 
-.skill.left .skill-description {
-    padding: 36px 0 36px 55%;
-    text-align: left;
+/* Media */
+
+@media (max-width: 767px) {
+
 }
